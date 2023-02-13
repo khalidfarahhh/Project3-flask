@@ -171,9 +171,15 @@ def model_builder():
     """Tester data for table"""
     u1 = Users(name='Khalid Farah', email='Khalidfarah211@gmail.com', password='123fortnite', phone="9999999")
     u2 = Users(name='Eli gilmour', email='elioooo@fortnite.com', password='123yay', phone="444112222")
-    
+    u3 = Users(name='yeahhhhhh', email='jsjsjajsj', password='ssssss', phone="1ssssss13333")
+    u4 = Users(name='Eli Wey', email='ewowowow@wowowo', password='wasawd', phone="111waw14444")
+    u5 = Users(name='John ss', email='jmort1021@gmaYEAom', password='12aaaty', phone="8587754956")
+    # u6 intends to succeed with a unique email
+    u6 = Users(name='John Mwawwasen', email='jmort1021ssssyahoo.com', password='123qwerty', phone="8587754956")
+    # U7 intended to fail as duplicate key
+    u7 = Users(name='Johnsssrtensen', email='jmort1021sssso.com', password='12ssserty', phone="8586791294")
 
-    table = [u1, u2,]
+    table = [u1, u2, u3, u4, u5, u6, u7]
 
     """Builds sample user/note(s) data"""
     for row in table:
